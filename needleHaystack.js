@@ -4,5 +4,7 @@ var strStr = function (haystack, needle) {
 
 	if (haystack.includes(needle)) {
 		return splitHaystack.indexOf(needle[0]);
-	}
+	} else if(haystack.includes(needle) === false){
+        return -1; 
+    }
 };
