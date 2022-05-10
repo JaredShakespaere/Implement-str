@@ -6,5 +6,7 @@ var strStr = function (haystack, needle) {
 		return splitHaystack.indexOf(needle[0]);
 	} else if(haystack.includes(needle) === false){
         return -1; 
+    } else if(needle === '' || ' '){
+        return 0;
     }
 };
